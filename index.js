@@ -12,10 +12,10 @@ const brainKey = 'plugin-follower-notification';
 module.exports = [{
 	types: ['startup'],
 	action: function( chat ) {
-		const fetchIntervalMinutes = 1;
+		const fetchIntervalMinutes = 5;
 		setInterval( function() {
 			fetchFollowers( chat );
-		}, 10000);
+		}, 60000 * fetchIntervalMinutes);
 	}
 }];
 
