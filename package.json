@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/owenconti/lctv-bot-follower-notification-plugin/issues"
   },
-  "homepage": "https://github.com/owenconti/lctv-bot-follower-notification-plugin#readme"
+  "homepage": "https://github.com/owenconti/lctv-bot-follower-notification-plugin#readme",
+  "dependencies": {
+    "request": "^2.65.0",
+    "xml2js": "^0.4.13"
+  }
 }
