@@ -13,7 +13,7 @@ const Client = require('../../utils/Client');
 const Settings = require('../../utils/Settings');
 
 // constants
-const availableStatuses = Settings.getSetting( __filename, 'statuses' );
+const availableStatuses = Settings.getSetting( 'user-status', 'statuses' );
 const pluginSettings = require('./settings.json');
 const brainKey = 'plugin-follower-notification';
 
