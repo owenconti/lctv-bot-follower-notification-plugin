@@ -8,7 +8,7 @@ const parseString = require('xml2js').parseString;
 const runtime = require('../../utils/Runtime');
 const Templater = require('../../utils/Templater');
 const Log = require('../../utils/Log');
-const websocket = require('../../utils/websocket');
+const Websocket = require('../../utils/Websocket');
 const Client = require('../../utils/Client');
 const Settings = require('../../utils/Settings');
 
@@ -83,8 +83,8 @@ function saveFollowersToBrain( followers, chat ) {
 
 	// Tell the websocket connection we have new followers
 	if ( newFollowers.length > 0 ) {
-		websocket.sendMessage( chat.credentials.room, {
-			message: 'newFollower',
+		Websocket.sendMessage( chat.credentials.room, {
+			message: 'follower-notifications-newFollower',
 			usernames: newFollowers
 		});
 	}

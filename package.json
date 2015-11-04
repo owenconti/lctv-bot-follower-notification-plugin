@@ -1,5 +1,5 @@
 {
-  "name": "follower-notification",
+  "name": "lctv-bot-follower-notification-plugin",
   "version": "1.0.0",
   "description": "Follower Notification plugin for LCTV Bot",
   "main": "index.js",
