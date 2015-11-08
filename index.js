@@ -25,15 +25,6 @@ module.exports = [{
 			fetchFollowers( chat );
 		}, 60000 * fetchIntervalMinutes);
 	}
-}, {
-    types: ['message'],
-    regex: /follower/,
-    action: function( chat, stanzas ) {
-        Websocket.sendMessage( chat.credentials.room, {
-			message: 'follower-notifications-newFollower',
-			usernames: ['Test', 'Username']
-		});
-    }
 }];
 
 /**
